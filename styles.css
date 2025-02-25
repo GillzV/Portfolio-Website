@@ -1,0 +1,427 @@
+/* Base styles and CSS reset */
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --text-color: #1f2937;
+  --light-text: #6b7280;
+  --background: #ffffff;
+  --section-bg: #f3f4f6;
+  --spacing-unit: 2rem;
+  --accent-color: #4f46e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
+}
+
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem var(--spacing-unit);
+}
+
+.header-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Hero section */
+.hero {
+  padding: 8rem 0 4rem;
+  background-color: var(--section-bg);
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--light-text);
+}
+
+.headshot img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+.section {
+  padding: 5rem 0;
+}
+
+.section:nth-child(even) {
+  background-color: var(--section-bg);
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* About section */
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.interests-list {
+  list-style: none;
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.interests-list li {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  text-align: center;
+}
+
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: translateY(-5px);
+}
+
+.skill-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.skill-icon span {
+  font-weight: 500;
+}
+
+/* New skill icons */
+.html-icon {
+  color: #e34c26;
+}
+
+.css-icon {
+  color: #264de4;
+}
+
+.android-icon {
+  color: #3DDC84;
+}
+
+.firebase-icon {
+  color: #FFCA28;
+}
+
+.cpp-icon {
+  color: #00599C;
+}
+
+/* Projects section */
+.projects-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.project-tab {
+  padding: 1rem 2rem;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project-tab.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.project {
+  display: none;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project.active {
+  display: block;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 200px;
+  height: 400px;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+/* Contact section */
+.contact-content {
+  text-align: center;
+  max-width: 550px; /* Smaller but still readable */
+  margin: 0 auto;
+  padding: 0.2rem; /* Adds breathing space */
+}
+
+.contact-text {
+  font-size: 1.1rem; /* Slightly bigger text */
+  margin-bottom: 1.5rem; /* Adds space between the text and buttons */
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.contact-btn {
+  padding: 0.4rem 0.8rem; /* Slightly smaller padding */
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px; /* Slightly more rounded for a modern look */
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  width: auto; /* Allow width to adjust to text */
+  font-size: 0.85rem; /* Smaller, more refined text */
+  min-width: 200px; /* Optional: ensures buttons aren’t too narrow */
+}
+
+/* Button hover states */
+.contact-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.resume-btn {
+  background-color: var(--accent-color);
+}
+
+.resume-btn:hover {
+  background-color: #3c35b5;
+}
+
+
+
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  background-color: var(--secondary-color);
+}
+
+.social-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Social icon colors */
+.social-icon.linkedin {
+  background-color: #0077b5;
+}
+
+.social-icon.github {
+  background-color: #333;
+}
+
+.social-icon.instagram {
+  background-color: #e4405f;
+}
+
+.social-icon.linkedin:hover {
+  background-color: #005582;
+}
+
+.social-icon.github:hover {
+  background-color: #000;
+}
+
+.social-icon.instagram:hover {
+  background-color: #d63251;
+}
+
+/* Footer */
+footer {
+  background-color: var(--text-color);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .headshot img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .nav-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .project-list {
+    flex-direction: column;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}

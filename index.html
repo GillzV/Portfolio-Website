@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gilbert Venegas - Computer Science Student and Software Developer Portfolio" />
+  <title>Gilbert Venegas | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <h1 class="header-name">Gilbert Venegas</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hello, I'm Gilbert Venegas</h1>
+        <p class="subtitle">Computer Science Student & Aspiring Software Developer</p>
+      </div>
+      <div class="headshot">
+        <img src="headshot.jpg" alt="Gilbert Venegas Headshot" />
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <p>Hello! My name is Gilbert Venegas. I'm a Computer Science student who wants to continue learning about Software Development and Technology. 
+          I am Currently pursuing my bachelor's degree in Computer Science and I'm constantly exploring new technologies and expanding my knowledge in the field.
+         </p>
+          <br> <br>
+          <p>Outside of academics, I enjoy going fishing with my friends and family, going to the gym, and playing videogames.</p>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-container">
+          <ul class="project-list">
+            <li data-project="1" class="project-tab active">Darts Score Tracker Application</li>
+            <li data-project="2" class="project-tab">Linear Algebra Calculator</li>
+          </ul>
+
+
+          <div class="project-details">
+            <div class="project active" id="project-1">
+              <h3>Darts Score Tracker Application</h3>
+              <p>The app is a Darts game score tracker designed to help with keeping score of the game. It was made using Android Studio and developed using java. 
+                It supports multiple players, each starting with a default score of 301 points which can be changed. Key features include player management, where users 
+                can add and name players, and score tracking, which updates each player's points based on their input. The app maintains a score history for each player, 
+                allowing them to track their progress. It also indicates whose turn it is and provides options to end a turn or revert scores if necessary.</p>
+              <img src="Darts.jpg" alt="Darts Score Tracker Application" class="project-image" />
+            </div>
+            <div class="project" id="project-2">
+              <h3>Linear Algebra Calculator</h3>
+              <p>A Python-based calculator designed to perform complex matrix operations and 
+                solve linear equations. Features include matrix multiplication, determinant calculation, and system of equations solver.</p>
+              <img src="linear-algebra-calculator.jpg" alt="Linear Algebra Calculator Screenshot" class="project-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="python-icon">
+                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.25 15.898V18H9.25v-2.102c-2.066-.441-3.5-1.829-3.5-4.049h2.5c0 1.379 1.121 2.5 2.5 2.5s2.5-1.121 2.5-2.5h2.5c0 2.22-1.434 3.608-3.5 4.049zM12 5.75c1.379 0 2.5 1.121 2.5 2.5s-1.121 2.5-2.5 2.5-2.5-1.121-2.5-2.5 1.121-2.5 2.5-2.5z"/>
+              </svg>
+              <span>Python</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="java-icon">
+                <path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573"/>
+              </svg>
+              <span>Java</span>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="html-icon">
+                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.339.002.233-2.622L5.129 4.41l.693 8.01h9.539l-.331 3.806-2.975.806-2.975-.806-.204-2.212H6.59l.366 4.242 5.023 1.4 5.023-1.4.699-7.902H8.531z"/>
+              </svg>
+              <span>HTML</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="css-icon">
+                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
+              </svg>
+              <span>CSS</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="firebase-icon">
+                <path d="M3.89 15.672L6.255.461A.542.542 0 017.27.288l2.543 4.771zm16.794 3.692l-2.25-14a.54.54 0 00-.919-.295L3.316 19.365l7.856 4.427a1.621 1.621 0 001.588 0zM14.3 7.147l-1.82-3.482a.542.542 0 00-.96 0L3.53 17.984z"/>
+              </svg>
+              <span>Firebase</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="android-icon">
+                <path d="M17.523 15.3414c-.5511 0-.998-.4393-.998-.9834s.4457-.9834.998-.9834c.5521 0 .998.4393.998.9834s-.4457.9834-.998.9834m-11.046 0c-.5511 0-.998-.4393-.998-.9834s.4457-.9834.998-.9834c.5521 0 .998.4393.998.9834s-.4457.9834-.998.9834m11.4308-6.7152l1.5183-2.6286a.333.333 0 00-.1151-.4554.334.334 0 00-.4555.115l-1.5367 2.6606c-1.1533-.4992-2.4484-.7771-3.8262-.7771-1.3778 0-2.673.278-3.8262.7771L8.1633 5.6572a.334.334 0 00-.4555-.115.333.333 0 00-.1151.4554l1.5183 2.6286c-2.9192 1.5037-4.878 4.3363-4.878 7.5746 0 .2024.0168.4016.0439.5984h15.5797c.027-.1968.0439-.396.0439-.5984 0-3.2383-1.9588-6.0709-4.878-7.5746"/>
+              </svg>
+              <span>Android</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="cpp-icon">
+                <path d="M10.5 15.97l.41 2.44c-.26.14-.68.27-1.24.39-.57.13-1.24.2-2.01.2-2.21-.04-3.87-.7-4.98-1.96C1.56 15.77 1 14.16 1 12.21c.05-2.31.72-4.08 2-5.32C4.32 5.64 5.96 5 7.94 5c.75 0 1.4.07 1.94.19s.94.25 1.2.4l-.58 2.49-1.06-.34c-.4-.1-.86-.15-1.39-.15-1.16-.01-2.12.36-2.87 1.1-.76.73-1.15 1.85-1.18 3.34 0 1.36.37 2.42 1.08 3.2.71.77 1.71 1.17 2.99 1.18l1.33-.12c.43-.08.79-.19 1.1-.32M11 11h2V9h2v2h2v2h-2v2h-2v-2h-2v-2m7 0h2V9h2v2h2v2h-2v2h-2v-2h-2v-2z"/>
+              </svg>
+              <span>C++</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-content">
+          <p>If you have any questions for me, you can contact me down below. My resume is also available for download down below.</p>
+          <div class="contact-buttons">
+              GillV1027@gmail.com
+            </a>
+          </div>
+    
+          <!-- Social Links Section -->
+          <div class="social-links">
+            <a href="https://linkedin.com/in/gilbert-venegas" class="social-icon linkedin" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+    
+            <a href="https://instagram.com/gillzz1027" class="social-icon instagram" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="resume.pdf" download class="contact-button resume-link">
+              <svg viewBox="-3 -2.3 30 30" fill="currentColor" class=social-icon instagram">
+                <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Gilbert Venegas. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
