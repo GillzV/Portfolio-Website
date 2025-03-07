@@ -258,18 +258,29 @@ body {
   display: block;
 }
 
+.project-image2 {
+  width: 100%;
+  max-width: 1280px;
+  height: 500px;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
-/* Contact section */
+
+
 .contact-content {
   text-align: center;
-  max-width: 550px; /* Smaller but still readable */
+  max-width: 550px; 
   margin: 0 auto;
-  padding: 0.2rem; /* Adds breathing space */
+  padding: 0.2rem; 
 }
 
 .contact-text {
-  font-size: 1.1rem; /* Slightly bigger text */
-  margin-bottom: 1.5rem; /* Adds space between the text and buttons */
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem; 
 }
 
 .contact-links {
@@ -280,22 +291,22 @@ body {
 }
 
 .contact-btn {
-  padding: 0.4rem 0.8rem; /* Slightly smaller padding */
+  padding: 0.4rem 0.8rem; 
   background-color: var(--primary-color);
   color: white;
   text-decoration: none;
-  border-radius: 6px; /* Slightly more rounded for a modern look */
+  border-radius: 6px; 
   transition: background-color 0.3s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.2rem;
-  width: auto; /* Allow width to adjust to text */
-  font-size: 0.85rem; /* Smaller, more refined text */
-  min-width: 200px; /* Optional: ensures buttons aren’t too narrow */
+  width: auto; 
+  font-size: 0.85rem; 
+  min-width: 200px; 
 }
 
-/* Button hover states */
+
 .contact-btn:hover {
   background-color: var(--secondary-color);
 }
@@ -310,8 +321,6 @@ body {
 
 
 
-
-/* Social Links */
 .social-links {
   display: flex;
   justify-content: center;
@@ -341,7 +350,7 @@ body {
   height: 24px;
 }
 
-/* Social icon colors */
+
 .social-icon.linkedin {
   background-color: #0077b5;
 }
@@ -366,7 +375,7 @@ body {
   background-color: #d63251;
 }
 
-/* Footer */
+
 footer {
   background-color: var(--text-color);
   color: white;
@@ -374,7 +383,6 @@ footer {
   text-align: center;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column-reverse;
