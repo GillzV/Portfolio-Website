@@ -377,42 +377,117 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column-reverse;
-    text-align: center;
-    gap: 2rem;
+  .nav-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
   }
 
-  .hero-text h1 {
-    font-size: 2.5rem;
+  .nav-links {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin: 0.5rem;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-text {
+    margin-bottom: 2rem;
   }
 
   .headshot img {
-    width: 250px;
-    height: 250px;
+    max-width: 250px;
+    height: auto;
   }
 
-  .nav-content {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
+  /* Projects Section Mobile Improvements */
+  .projects-container {
+    padding: 0 1rem;
   }
 
   .project-list {
     flex-direction: column;
-  }
-
-  .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 1rem;
-  }
-
-  .contact-links {
-    flex-direction: column;
     align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .project-tab {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .project {
+    padding: 1rem;
+  }
+
+  .project h3 {
+    font-size: 1.5rem;
+  }
+
+  .project p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Carousel Mobile Improvements */
+  .carousel-container {
+    margin: 1rem auto;
+  }
+
+  .carousel {
+    height: 300px;
+  }
+
+  .carousel-control {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .carousel-control.prev {
+    left: 10px;
+  }
+
+  .carousel-control.next {
+    right: 10px;
+  }
+
+  .carousel-indicators {
+    bottom: 10px;
+  }
+
+  /* Skills Section Mobile Improvements */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .skill-item {
+    padding: 1rem;
+  }
+
+  .skill-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Contact Section Mobile Improvements */
+  .contact-content {
+    padding: 1rem;
   }
 
   .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
   }
 
@@ -424,6 +499,29 @@ footer {
   .social-icon svg {
     width: 20px;
     height: 20px;
+  }
+}
+
+/* Additional Mobile Optimizations */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section h2 {
+    font-size: 1.8rem;
+  }
+
+  .carousel {
+    height: 250px;
+  }
+
+  .project-image2 {
+    max-height: 200px;
   }
 }
 
