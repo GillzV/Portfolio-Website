@@ -278,13 +278,15 @@ body {
 
 .project-image2 {
   width: 100%;
-  max-width: 1280px;
-  height: 500px;
+  max-width: 800px;
+  height: auto;
   border-radius: 8px;
-  margin-top: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: block;
+  margin: 2rem auto;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .contact-content {
@@ -517,6 +519,11 @@ footer {
   .social-icon svg {
     width: 20px;
     height: 20px;
+  }
+
+  .project-image2 {
+    max-width: 100%;
+    margin: 1rem auto;
   }
 }
 
